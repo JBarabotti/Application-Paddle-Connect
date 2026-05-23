@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<!-- Simulateur iPhone -->
+<div id="mobile-app">
+
     <!-- Overlay -->
     <div id="menu-overlay" class="menu-overlay"></div>
 
@@ -16,14 +19,14 @@
     <header class="main-header">
         <h1 class="logo">Paddle Connect</h1>
         <div class="header-actions">
-            <button class="icon-btn" aria-label="Notifications">
+            <button class="icon-btn ios-touchable" aria-label="Notifications">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                 </svg>
                 <span class="notification-dot"></span>
             </button>
-            <button class="icon-btn" id="burger-btn" aria-label="Menu">
+            <button class="icon-btn ios-touchable" id="burger-btn" aria-label="Menu">
                 <img src="https://ui-avatars.com/api/?name=Jordan&background=E5E5EA&color=1D1D1F" alt="Profil" class="header-avatar">
             </button>
         </div>
@@ -41,8 +44,8 @@
 
         <div class="menu-content-scroll">
             <div class="menu-quick-actions">
-                <button class="premium-btn">Passer en Premium</button>
-                <button class="share-btn">
+                <button class="premium-btn ios-touchable">Passer en Premium</button>
+                <button class="share-btn ios-touchable">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
                     Partager le profil
                 </button>
@@ -52,28 +55,28 @@
                 <div class="ios-list-group">
                     <h3 class="ios-list-title">VOTRE COMPTE</h3>
                     <div class="ios-list">
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
                                 <span>Modifier le profil</span>
                             </div>
                             <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
                                 <span>Votre activité</span>
                             </div>
                             <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg orange"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg></div>
                                 <span>Vos règlements</span>
                             </div>
                             <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg gray"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
                                 <span>Paramètres</span>
@@ -86,14 +89,14 @@
                 <div class="ios-list-group">
                     <h3 class="ios-list-title">ASSISTANCE & LÉGAL</h3>
                     <div class="ios-list">
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
                                 <span>Aide</span>
                             </div>
                             <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
-                        <a href="#" class="ios-list-item">
+                        <a href="#" class="ios-list-item ios-touchable">
                             <div class="ios-item-left">
                                 <div class="icon-bg gray"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg></div>
                                 <span>Conditions d'utilisation</span>
@@ -105,7 +108,7 @@
 
                 <div class="ios-list-group">
                     <div class="ios-list">
-                        <button class="ios-list-item logout-btn">
+                        <button class="ios-list-item logout-btn ios-touchable">
                             <span>Fermer la session</span>
                         </button>
                     </div>
@@ -114,8 +117,8 @@
         </div>
     </aside>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Main Content (Scrollable Container inside Frame) -->
+    <main class="main-content" id="main-scroll">
         
         <!-- HERO -->
         <section class="hero-section fade-up">
@@ -124,25 +127,25 @@
 
         <!-- QUICK ACTIONS (Apple Grid Style) -->
         <section class="quick-actions-grid fade-up">
-            <button class="action-card">
+            <button class="action-card ios-touchable">
                 <div class="action-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                 </div>
                 <span>Réserver</span>
             </button>
-            <button class="action-card">
+            <button class="action-card ios-touchable">
                 <div class="action-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                 </div>
                 <span>Apprendre</span>
             </button>
-            <button class="action-card">
+            <button class="action-card ios-touchable">
                 <div class="action-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 </div>
                 <span>Rang</span>
             </button>
-            <button class="action-card">
+            <button class="action-card ios-touchable">
                 <div class="action-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </div>
@@ -152,12 +155,12 @@
 
         <!-- CTA SECTION -->
         <section class="cta-section fade-up">
-            <div class="cta-box">
+            <div class="cta-box ios-touchable">
                 <div class="cta-text">
                     <h2>Trouve un match</h2>
                     <p>Autour de toi en quelques secondes.</p>
                 </div>
-                <button class="cta-primary-btn">Chercher</button>
+                <button class="cta-primary-btn ios-touchable">Chercher</button>
             </div>
         </section>
 
@@ -168,7 +171,7 @@
             </div>
             <div class="carousel-container">
                 <!-- Card 1 -->
-                <div class="club-card">
+                <div class="club-card ios-touchable">
                     <div class="club-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1622281549424-fd9aefa1a554?q=80&w=600&auto=format&fit=crop" alt="Club">
                         <div class="club-rating">
@@ -182,7 +185,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="club-card">
+                <div class="club-card ios-touchable">
                     <div class="club-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1622281432296-6e11894d93e1?q=80&w=600&auto=format&fit=crop" alt="Club">
                         <div class="club-rating">
@@ -202,12 +205,12 @@
         <section class="suggested-section fade-up">
             <div class="section-header">
                 <h2 class="section-title">Suggérés pour vous</h2>
-                <button class="view-all-btn">Tout voir</button>
+                <button class="view-all-btn ios-touchable">Tout voir</button>
             </div>
             
             <div class="suggested-grid">
                 <!-- Premium -->
-                <div class="suggested-card premium-card">
+                <div class="suggested-card premium-card ios-touchable">
                     <div class="premium-badge">PRO</div>
                     <h3>Passez à la vitesse supérieure</h3>
                     <p>Priorité de réservation, statistiques avancées et matchmaking intelligent.</p>
@@ -215,7 +218,7 @@
                 </div>
                 
                 <!-- Contact -->
-                <div class="suggested-card contact-card">
+                <div class="suggested-card contact-card ios-touchable">
                     <div class="card-icon-top">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
                     </div>
@@ -228,25 +231,28 @@
             </div>
         </section>
 
+        <!-- Bottom Spacer -->
         <div style="height: 120px;"></div>
     </main>
 
     <!-- Bottom Navigation (iOS Tab Bar) -->
     <nav class="bottom-nav">
-        <a href="#" class="nav-item active">
+        <a href="#" class="nav-item active ios-touchable">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             <span>Accueil</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="nav-item ios-touchable">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             <span>Communauté</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="nav-item ios-touchable">
             <img src="https://ui-avatars.com/api/?name=Jordan&background=E5E5EA&color=1D1D1F" alt="Profil" class="nav-avatar">
             <span>Profil</span>
         </a>
     </nav>
 
-    <script src="script.js"></script>
+</div> <!-- End of mobile app frame -->
+
+<script src="script.js"></script>
 </body>
 </html>
